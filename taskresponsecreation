@@ -1,0 +1,85 @@
+resposne point for batteryjunction
+
+//product page
+$(document).ready(function(){
+    if($(".item-thumbnails").length){
+        //ABTastyClickTracking('Views on Product Page [all recipes]', null, 541127);
+        console.log("view on Product Page");
+    }
+});
+
+
+//homepage
+$(document).ready(function(){
+    if($("#home-slideshow-3").length){
+        //ABTastyClickTracking('Views on Product Page [all recipes]', null, 541127);
+        console.log("view on Product Page");
+    }
+});
+
+//category pages
+
+$(document).ready(function(){
+    if($(".category-boxes").length){
+        //ABTastyClickTracking('Views on Product Page [all recipes]', null, 541127);
+        console.log("view on Product Page");
+    }
+});
+
+//sub-category
+
+$(document).ready(function(){
+    if($(".pagination-bar").length){
+        //ABTastyClickTracking('Views on Product Page [all recipes]', null, 541127);
+        console.log("view on Product Page");
+    }
+});
+
+//Internal Search
+
+jQuery(document).on('click', '.header-search', function(){
+            //ABTastyClickTracking('Clicks on Internal Search [all recipes]', null, 541127);
+            console.log('Clicks on Internal search[all recipes]');
+        });
+
+//Ship Billing Page
+
+$(document).ready(function(){
+    if($("#ys_shipBillShippingInfo").length){
+        //ABTastyClickTracking('Views on Ship Billing Page [all recipes]', null, 541127);
+        console.log("view on Ship Billing Page");
+    }
+});
+
+//click on top nav 
+
+jQuery(document).on('click', '.main-nav', function(){
+            //ABTastyClickTracking('Clicks on Top Nav [all recipes]', null, 541127);
+            console.log('Clicks on Top Nav [all recipes]');
+        });
+
+
+//click on left nav
+
+jQuery(document).on('click', '.filter-container', function(){
+            //ABTastyClickTracking('Clicks on Left Nav [all recipes]', null, 541127);
+            console.log('Clicks on Left Nav [all recipes]');
+        });
+
+
+//views on cart page
+
+$(document).ready(function(){
+    if (location.href.match(/&sectionId=ysco\.cart/) || location.href.match(/cgi-bin\/wg-order\?theshorelinemarket/)){
+        //ABTastyClickTracking('Views on Cart Page [all recipes]', null, 541127);
+        console.log("View on Cart Page");
+    }
+});
+
+
+//click on add-to-cart
+
+jQuery(document).on('click','.add-to-cart', function(){
+            //ABTastyClickTracking('Clicks on Add To Cart [all recipes]', null, 541127);
+            console.log('Clicks on Add To Cart[all recipes]');
+        });

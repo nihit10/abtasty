@@ -1,0 +1,84 @@
+//Homepage views
+
+//Multi-Add to cart
+ jQuery(document).on('click', '.atc-btn', function(){
+        //ABTastyClickTracking('Clicks on MULTI-Add TO CART [all recipes]', null, 541127);
+        console.log('Clicks on MULTI-Add TO CART ');
+    });
+                
+//product page add to cart
+
+ jQuery(document).on('click', '.itemATC', function(){
+        //ABTastyClickTracking('Clicks on Product Page Add TO CART [all recipes]', null, 541127);
+        console.log('Clicks on Product Page Add TO CART ');
+    });
+
+//internal search clicks
+jQuery(document).on('click', '.searchInput', function(){
+            //ABTastyClickTracking('Clicks on Internal Search [all recipes]', null, 541127);
+            console.log('Clicks on Internal search[all recipes]');
+        });
+
+
+
+jQuery(document).on('click', '.searchSubmit', function(){
+            //ABTastyClickTracking('Clicks on Free Shipping [all recipes]', null, 541127);
+            console.log('Clicks on Free Shipping [all recipes]');
+        });
+
+
+
+//keep shopping
+jQuery(document).on('click', '.ys_first', function(){
+            //ABTastyClickTracking('Clicks on Keep Shopping [all recipes]', null, 541127);
+            console.log('Clicks on Keep Shopping [all recipes]');
+        });
+
+//view cart
+ jQuery(document).on('click', '.view-cart', function(){
+            //ABTastyClickTracking('Clicks on View Cart [all recipes]', null, 541127);
+            console.log('Clicks on View Cart [all recipes]');
+        });     
+
+//showmorebtn
+jQuery(document).on('click', '.showMoreBTN', function(){
+            //ABTastyClickTracking('Clicks on Product Description Expand Clicks [all recipes]', null, 541127);
+            console.log('Clicks on Product Description Expand Clicks [all recipes]');
+        });
+
+//homepage
+$(document).ready(function(){
+	if($(".scrollDiv").length){
+        //ABTastyClickTracking('Views on HomePage [all recipes]', null, 541127);
+		console.log("view on homepage");
+	}
+});
+
+//category
+$(document).ready(function(){
+	if($(".contentsNameLists").length){
+        //ABTastyClickTracking('Views on Category Page [all recipes]', null, 541127);
+		console.log("view on CategoryPage");
+	}
+});
+
+//Sub-category page
+$(document).ready(function(){
+    if($(".contentsSalePrice", ".contentsTD").length){
+        //ABTastyClickTracking('Views on Sub-category Page [all recipes]', null, 541127);
+        console.log("view on Sub-Category Page");
+    }
+});
+
+//productpage
+$(document).ready(function(){
+    if($('.imagetabs, .imageTabsTop').length){
+        //ABTastyClickTracking('Views on Product Page [all recipes]', null, 541127);
+        console.log("view on Product Page");
+    }
+});
+
+
+
+
+
