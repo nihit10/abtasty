@@ -1,0 +1,77 @@
+jQuery(document).ready(function(){
+	var cart={
+		moveCart:function(){
+			$("#ysw-cart").appendTo(".side-blocks");
+			$(".shipping-message").appendTo(".side-blocks");
+		},
+		init:function(){
+            var obj =this;
+            obj.moveCart();
+        }
+	}.init()
+});
+
+
+$(".item-left #tid-description div").removeClass("toggled-content"); 
+$(".item-left #tid-description div").addClass("selected"); 
+
+$("utility-bar").appendTo("content-container")
+$("[role=navigation]").prependTo(".mid-header");
+$("[role=navigation]").insertAfter(".sitewide-promo")
+$("utility-bar").appendTo("content-container")
+
+//
+$(".mid-header [role=navigation]").insertAfter("[role=banner] .sitewide-promo");
+$("[role=banner] .utility-bar").insertAfter(".mid-header .content-container");
+//
+
+$("#tid-description").find(".toggled-content").removeClass();
+$(.item-left #tid-description div).addClass("selected");
+
+$(".item-left ul li").click(function () {
+	var tabId = this.id;
+
+	$("#"+tabId).find(".toggled-content").removeClass();
+	$(.item-left #tid-description div).addClass("toggled-content");
+
+jQuery(document).ready(function(){
+	var nav={
+		moveNav:function(){
+			$(".mid-header [role=navigation]").insertAfter("[role=banner] .sitewide-promo");
+			$("[role=banner] .utility-bar").insertAfter(".mid-header .content-container");
+		},
+		changeBorder:function(){
+			$("header .mid-header").attr("style","border-bottom: 0px !important");
+			$("header nav").css("border-bottom","5px solid #d9e0e4");
+		},
+		init:function(){
+            var obj =this;
+            obj.moveNav();
+            obj.changeBorder();
+        }
+	}.init()
+});
+
+$("header .mid-header").removeProperty("border-bottom");
+$("header .mid-header").attr("style","border-bottom: 0px !important");
+
+
+jQuery(document).ready(function(){
+	var hide={
+		hideSection:function(){
+			$(".cyc-cart-special").hide();
+			$("#ys_relatedItems").hide();
+		},
+		init:function(){
+			var obj =this;
+			obj.hideSection();
+		}
+	}.init()
+});
+diffchecker
+create response point: update button, checkout, qauantity field.
+
+$("input[name='eventName.cartContinueEvent']")
+$("input[value='Update']")
+$(".cyc-basket-item-update-text-link")
+$(.q_dec_button, .q_inc_button, .cyc-basket-item-qty input.text')

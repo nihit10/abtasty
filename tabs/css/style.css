@@ -1,0 +1,61 @@
+/* classic clearfix */
+div.clear {
+	clear: both;
+}
+
+/* centered fixed-width page container */
+div#wrapper {
+	width: 980px;
+	padding: 10px;
+	margin: 0 auto;
+	border: 1px solid #c0c0c0;
+}
+
+/* tabs styles */
+
+section.tabs {
+	/* a little breathing room for the content within the tabs */
+	padding: 10px;
+}
+
+/* general tab heading styles for the list of headings as a whole */
+section.tabs ul {
+	padding: 0px;
+	margin: 0;
+	list-style-type: none; /* remove the default bullet point for lists */
+	position: relative;
+	z-index: 1;
+}
+
+/* general styles for each tab heading list item */
+section.tabs ul li {
+	float: left; /* make these tab headings sit next to each other */
+	border: 1px solid #c0c0c0;	
+	padding: 10px;
+	margin: 0px;
+	list-style-position: inside;
+	width: 100px;
+	text-align: center;
+	background-color: #f0f0f0;
+}
+
+/* selected tab heading styles */
+section.tabs ul li.selected {
+	/* make the selected tab heading look like it blends with the content below it. */
+ 	background-color: white;
+	border-bottom: 1px solid white;
+}
+
+/* general tab content styles */
+section.tabs article {
+	border: 1px solid #c0c0c0;
+	display: none; /* hidden by default */
+	padding: 10px;
+	position: relative;
+	top: -1px;
+}
+
+/* selected tab content styles */
+section.tabs article.selected {
+	display: block; /* visible! */
+}
